@@ -6,10 +6,10 @@ class Ball {
           'density':1.0
       }
      
+
+      this.body = Bodies.circle(x, y,20, options);
      
-      this.body = Bodies.circle(x, y,25, options);
-     
-      this.radius =25;
+      this.radius =20;
       
       World.add(world, this.body);
     }

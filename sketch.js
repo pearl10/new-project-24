@@ -23,8 +23,8 @@ function setup() {
 
 	Engine.run(engine);
 	
-	ground=new ground(400,600,800)
-	ball=new Ball(175,675,25);
+	ground=new Ground(400,680,800,40)
+	ball=new Ball(150,675);
 	binLog1=new Bin(500,660,20,250,20);
 	Log2=new Bin(650,660,20,250,20);
 	Log3=new Bin(575,660,180,20,20);
@@ -46,7 +46,7 @@ function draw() {
 function keyPressed(){
 if(keyCode===UP_ARROW){
 
-Matter.Body.applyForce(ball.body,ball.body.position,{x:75,y:-75});
+Matter.Body.applyForce(ball.body,ball.body.position,{x:45,y:-45});
 
 
 }
